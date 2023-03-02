@@ -35,7 +35,7 @@ public class  MyController
 
     @PostMapping("/startMatch")
     public List<String> startMatch(@RequestBody MatchDetails matchDetails) {
-        playerInfoService.checkPlayersInfoPresentOrNot();
+
         return cricketService.startGame(matchDetails);
     }
 
