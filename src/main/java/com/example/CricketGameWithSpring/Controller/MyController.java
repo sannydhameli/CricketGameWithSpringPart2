@@ -36,6 +36,7 @@ public class  MyController
     @PostMapping("/startMatch")
     public List<String> startMatch(@RequestBody MatchDetails matchDetails) {
 
+        System.out.println(matchDetails);
         return cricketService.startGame(matchDetails);
     }
 
